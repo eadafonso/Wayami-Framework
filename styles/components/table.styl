@@ -1,0 +1,67 @@
+table, 
+th, 
+td
+    border-bottom 1px solid #ddd
+    border-collapse collapse
+    font-size 1rem
+
+
+
+table
+    width 100%
+    border none
+
+.table-header th  
+    font-weight 400
+    text-align left
+
+td,
+th 
+    padding 15px
+
+tr:nth-child(even)
+    background-color #fafafa
+
+tr:nth-child(odd)
+    background-color #fff
+
+
+@media all and (max-width: 480px) {
+    .table-header {
+      display: none;
+      border none
+    }
+    th,td {
+      display: block;
+      border none
+      
+    }
+    tr{
+      border-bottom 1px solid #ddd 
+    }
+    .col {
+      
+      flex-basis: 100%;
+      
+    }
+    .col {
+      display: flex;
+      padding: 10px 10px;
+      &:before {
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: left;
+      }
+    }
+  }
+
+
+.table-primary
+    >table, 
+    th, 
+    td
+        border 1px solid #ddd
+        border-collapse collapse
+        font-size 1rem
+        background-color #fff
