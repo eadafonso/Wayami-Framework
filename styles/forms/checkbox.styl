@@ -1,0 +1,50 @@
+
+.checkBox
+    display inline-block
+    position relative
+    margin 10px 5px
+    cursor pointer
+    padding-left 25px
+    font-size 15px
+    -webkit-user-select none
+    user-select none
+    >input
+        position absolute
+        opacity 0
+        cursor pointer
+        height 0
+        width 0
+        &:checked
+            & ~ .checkmark
+                background-color $blue
+                &:after
+                    display inline-block
+
+    >.checkmark
+        border-radius 3px
+        &:after
+            left 5.5px
+            top 3px
+            width 5px
+            height 10px
+            border solid white
+            border-width 0 2px 2px 0
+            -webkit-transform rotate(45deg)
+            -ms-transform rotate(45deg)
+            transform rotate(45deg)
+
+.checkmark
+    position absolute
+    top 0
+    left 0
+    height 19px
+    width 19px
+    background-color #eee
+    &:after
+        content ""
+        position absolute
+        display none
+
+.check-block
+    >.checkBox
+        display: block
