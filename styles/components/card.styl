@@ -1,0 +1,44 @@
+.card-container
+    display flex
+    flex-wrap: wrap
+    @media (max-width: 720px) {
+        justify-content: center;
+    }
+
+.card
+    width 295px
+    position relative
+    margin 5px
+    border-radius: 3px
+    background-color #fff
+    border 1px solid rgba(0, 40, 100, 0.12)
+
+    >.card-header
+        >.card-title
+            padding 10px
+            font-weight 200
+            border-bottom: 1px solid #ddd
+
+    >.card-body
+        padding 10px
+        line-height: 1.5
+        font-weight 200
+
+
+.card-secondary
+    @extends .card
+
+    >.card-img
+        >img
+            width 100%
+
+    >.card-title
+        padding 10px
+        font-weight 200
+
+    >.card-footer
+        padding 10px
+
+.card-transparent
+    border none 
+    border-radius: none
