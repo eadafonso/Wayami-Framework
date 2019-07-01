@@ -1,0 +1,53 @@
+.alert
+    max-width: 350px
+    height auto
+    padding 12px 10px
+    border 1px solid transparent
+    border-radius: 4px
+    margin 10px 0
+    font-size 15px
+    background-color #D9E5F3
+
+
+.alert-error
+    @extends .alert 
+    background-color #F7D2D2
+    color $red-dark-1
+
+.alert-sucess 
+    @extends .alert
+    background-color #DEF1D0
+    color $green-dark-1
+
+.alert-warning
+    @extends .alert
+    background-color #FCF2D3
+    color #A08C4A
+
+.alert-lg
+    @extends .alert
+    max-width 100%
+
+.alert-secondary
+    width 400px
+    padding 9px
+    border-radius 3px
+    background-color #fff
+    border 1px solid #ddd
+    >.alert-header
+        display flex
+        justify-content: space-between
+        >.alert-title
+            font-weight 500
+            font-size: 1.1rem
+        >.alert-close
+            font-weight 300
+            color #313131
+            opacity 0.8
+            &:hover
+                cursor pointer
+                font-weight 700
+                opacity 1
+    
+    >.alert-content
+        margin 5px 0
