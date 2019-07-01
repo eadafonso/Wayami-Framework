@@ -1,0 +1,91 @@
+.progress-bar
+    width 250px
+    height 5px
+    background linear-gradient(to right, $blue, $blue)
+    background-color: #ccc
+    border-radius: 4px
+    background-size 20px
+    background-repeat repeat-y
+    background-position -25% 0
+    animation: scroll 1.5s linear infinite
+
+@keyframes scroll {
+    50%{
+        background-size 80%;
+    }
+    100%{
+        background-position: 125% 0;
+    }
+}
+
+
+.progress__bar
+    border-radius 50px
+    width 100%
+    overflow hidden
+
+.progress__md 
+    @extends .progress__bar 
+    width 50%
+
+.progress__sm
+    @extends .progress__bar 
+    width 20%
+
+.progress__bar span {
+  display: block;
+}
+
+.bar
+    background: rgba(0, 0, 0, 0.075)
+
+.progress {
+  -webkit-animation: loader 8s ease infinite;
+          animation: loader 8s ease infinite;
+  background: $green;
+  color: #fff;
+  padding: 2.4px;
+  width: 0;
+}
+
+.progress__primary
+    background $blue
+
+.progress__error
+    background $red
+
+.progress__warning
+    background $orange
+
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
