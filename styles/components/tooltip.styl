@@ -1,0 +1,35 @@
+
+.tooltip
+    position relative
+
+.tooltip:after,
+.tooltip:before
+    position absolute
+    bottom 100%
+    left 50%
+    transform: translateX(-50%)
+    z-index 1
+    visibility hidden
+    transition .3s
+
+.tooltip:before
+    content: ''
+    border 4px solid 
+    border-color #000 transparent transparent
+
+.tooltip:after
+    width 100px
+    content: attr(data-tooltip)
+    background-color #000000
+    color #fff
+    padding 4px 8px
+    border-radius: 3px
+    text-align: center
+    font-size 15px
+    font-weight: 100
+    display inline
+    margin-bottom: 7px
+
+.tooltip:hover:after,
+.tooltip:hover:before
+    visibility visible
