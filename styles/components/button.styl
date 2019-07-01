@@ -1,0 +1,223 @@
+.btn
+    width 10rem
+    height 35px
+    background-color #fff
+    border 1px solid #dddddd
+    border-radius 3px
+    font-size 15.5px
+    outline none
+    opacity 0.9
+    cursor pointer
+    margin 0 5px
+    font-weight 300
+    &:hover
+        opacity 1
+
+    >i 
+        margin 0 5px
+
+.btn-primary
+    @extends .btn 
+    background-color $blue
+    color $white
+    border-color transparent
+
+.btn-sucess
+    @extends .btn 
+    background-color $green
+    color $white
+    border-color transparent
+
+.btn-error
+    @extends .btn
+    background-color $red
+    color $white
+    border-color transparent
+
+.btn-warning
+    @extends .btn 
+    background-color $orange
+    color $white
+    border-color transparent
+
+.btn-info
+    @extends .btn
+    background-color: $yellow
+    color $white
+    border-color transparent
+
+.btn-gradient-1
+    @extends .btn
+    color $white
+    border-color none
+    background linear-gradient(135deg, #ecc344 0%, #e42d7f 100% )
+
+.btn-gradient-2
+    @extends .btn
+    background linear-gradient(135deg, #00c7c5 0%, #0088d7 100%)
+    color #fff
+    border-color none
+
+.btn-gradient-3
+    @extends .btn
+    background linear-gradient(135deg, #855edd 0%, #63afd3 100%)
+    color #fff
+    border-color none
+
+.btn-gradient-4
+    @extends .btn
+    background linear-gradient(135deg, #e32d76 0%, #648fe6 100%)
+    color #fff
+    border-color none
+
+.btn-gradient-5
+    @extends .btn
+    background linear-gradient(135deg, #b6eb77 0%, #359ab6 100%)
+    color #fff
+    border-color none
+
+.btn__outline--primary
+    @extends .btn
+    background-color #fff
+    border-color $blue
+    color $blue
+    &:hover
+        color #ffffff
+        background-color $blue
+
+.btn__outline--sucess
+    @extends .btn
+    background-color #fff
+    border-color $green
+    color $green
+    &:hover
+        color #ffffff
+        background-color $green
+
+
+.btn__outline--error
+    @extends .btn
+    background-color #fff
+    border-color $red
+    color $red
+    &:hover
+        color #ffffff
+        background-color $red
+
+
+.btn__outline--warning
+    @extends .btn
+    background-color #fff
+    border-color $orange
+    color $orange
+    &:hover
+        color #ffffff
+        background-color $orange
+
+.btn__outline--info
+    @extends .btn
+    background-color #fff
+    border-color $yellow
+    color $yellow
+    &:hover
+        color #ffffff
+        background-color $yellow
+
+button:disabled
+    opacity 0.7
+    &:hover
+        cursor not-allowed
+        opacity 0.7
+
+.btn-lg
+    @extends .btn
+    padding 13px
+    height 45px
+    font-size 16px
+
+.btn-sm
+    @extends .btn
+    width 7rem
+    padding 5px
+    height 29px
+    font-size 13px
+
+.btn-block
+    @extends .btn
+    width 100%
+    margin-top 10px
+
+.btn-float
+    position fixed
+    background-color $orange
+    width 50px
+    height 50px
+    display inline-block
+    bottom 40px
+    border none
+    color $white
+    border-radius 50px
+    right 40px
+    text-align center
+    font-size 17px
+
+.btn-icon
+    @extends .btn
+    width 40px
+    >i
+        display block
+        text-align center
+        margin 0
+
+
+.dropdown
+    display inline-block
+    position relative
+
+.dropdown-btn
+    @extends .btn
+    padding 7px
+
+.dropdown-btn:after
+    content: ''
+    position absolute
+    top 50%
+    right 15px
+    transform translateY(-50%)
+    width 0
+    height 0
+    border-left: 5px solid transparent
+    border-right 5px solid transparent
+    border-top 5px solid #000
+
+.dropdown-input
+    display none
+
+.dropdown-menu
+    position absolute
+    top 100%
+    border 1px solid #dddddd
+    border-radius 4px
+    padding 0
+    margin 2px 0 0 0
+    list-style none
+    background-color #fff
+    box-shadow 0 0 6px 0 rgba(0,0,0,0.1)
+
+.dropdown-input + .dropdown-menu
+    display none
+
+.dropdown-input:checked + .dropdown-menu
+    display block
+
+.dropdown-menu li
+    padding 10px 20px
+    cursor pointer
+    white-space nowrap
+    &:hover
+        background-color #f6f6f6
+
+.dropdown-menu li a 
+    display block
+    margin -10px -20px
+    padding 10px 20px
