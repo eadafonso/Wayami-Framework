@@ -1,0 +1,90 @@
+.input
+    width 14.5rem
+    margin 10px 0
+    padding 7px 10px
+    background-color $white
+    border-radius 3px
+    font-size 16px
+    border 1px solid rgba(0, 40, 100, 0.12)
+    outline none 
+    color $gray-dark-1
+    font-weight 200
+
+.input-mobile
+    @extends .input
+    border none 
+    border-radius 0
+    margin 0 5px
+    background-color transparent
+    border-bottom 1px solid #ddd
+
+.input__outline--primary
+    @extends .input
+    border-color $blue
+    color $blue
+
+.input__outline--sucess 
+    @extends .input
+    border-color $green
+    color $green
+
+.input__outline--error
+    @extends .input
+    border-color $red
+    color $red
+
+.input__outline--warning 
+    @extends .input
+    border-color $orange
+    color $orange
+
+.input-mobile-outline-primary
+    @extends .input
+    color $blue
+    border-color $blue
+
+.input-mobile-outline-sucess
+    @extends .input
+    color $green
+    border-color $green
+
+.input-mobile-outline-error
+    @extends .input
+    color $red
+    border-color $red
+
+.input-mobile-outline-warning
+    @extends .input
+    color $orange
+    border-color $orange
+
+::-webkit-input-placeholder
+    font-size 0.95rem
+
+.input-lg
+    width 100%
+
+.input-sm
+    width 10%
+    padding 2.5px 10px
+    font-size 14.5px
+
+.form__require
+    color $red-light-3
+    margin 0 5px
+
+.form-group
+    display flex
+    justify-content: space-between
+
+
+.input-icon
+    position relative
+    >input 
+        padding-left: 35px
+    >i  
+        position absolute
+        left 0
+        top 10px
+        padding 9px 8px
+        display block
