@@ -1,0 +1,22 @@
+{
+  "name": "Wayami-Framework",
+  "version": "2.0.0",
+  "description": "Wayami é um framework css desenvolvido para agelizar o desenvolvimento de Aplicações Web, Websites e PWA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keysword": [
+    "Framework",
+    "Css3",
+    "Responsive",
+    "Eadfast",
+    "Ead",
+    "Edvaldo Afonso",
+    "Desenvolvimento Web",
+    "Webiste",
+    "Aplicação Web"
+  ],
+  "author": "Eadfast",
+  "license": "ISC"
+}
