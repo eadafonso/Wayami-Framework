@@ -1,0 +1,40 @@
+ul.check__pill li 
+    display inline
+
+ul.check__pill li label
+    display inline-block
+    background-color #fff
+    border 1px solid #ddd
+    color #555
+    font-size 15px
+    border-radius 25px
+    white-space nowrap
+    font-weight 100
+    margin 3px 0px
+    -webkit-touch-callout none
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+    -webkit-tap-highlight-color: transparent;
+    transition all .2s
+
+ul.check__pill li label
+    padding 8px 12px;
+    cursor pointer
+
+ul.check__pill li input[type="checkbox"]:checked+label 
+    border 1px solid $blue
+    background-color #D8E4F2
+    color $blue-dark-3
+    transition all .2s
+
+ul.check__pill li input[type="checkbox"] 
+    display absolute
+
+ul.check__pill li input[type="checkbox"]
+    position absolute
+    opacity 0
+
+ul.check__pill li input[type="checkbox"]:focus+label 
+    border 1px solid $blue
