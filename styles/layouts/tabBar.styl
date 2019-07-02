@@ -1,0 +1,48 @@
+.tabBar
+    width 100%
+    bottom 0
+    position fixed
+    height 50px
+    background-color #fff
+    border-top 1px solid #ddd
+
+.tabBar ul
+    display flex
+    @media (max-width: 600px) {
+        padding-left 0
+        margin 15px 1rem
+        justify-content center
+    }
+
+    @media (min-width: 1024px) {
+        padding-left 0
+        margin 15px 1rem
+        justify-content space-between
+    }
+
+    @media (min-width: 800px) {
+        padding-left 0
+        margin-left 0
+        margin 15px auto
+        justify-content center
+    }
+
+    @media (min-width: 768px) {
+        padding-left 0
+        margin-left 0
+        margin 15px auto
+        justify-content center
+    }
+
+.tabBar ul li 
+    font-size 23px
+    margin 0 auto
+
+.tabBar ul li a
+    text-decoration none
+
+.active
+    color $blue
+
+.tabBar ul li i:active
+    color $blue
