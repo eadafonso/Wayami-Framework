@@ -1,0 +1,95 @@
+.header
+    background-color white
+    color #555
+    display flex
+    align-items center
+    padding 0 10px
+    justify-content space-between
+    height 60px
+    box-shadow: 0px 15px 10px -15px #ddd
+
+/*hamburger icon*/
+.menu-mobile 
+    display flex
+    align-items center
+
+.icon-menu
+    width 2rem
+    border none
+    background transparent
+    outline none
+    cursor pointer
+
+.icon-menu i
+    font-size 24px
+    display block
+    margin 0.6rem 0
+
+/*desktop*/
+.desktop__navigation
+    display flex
+    justify-content flex-end
+
+.desktop__navigation li  
+    list-style none
+    margin 10px
+    display none
+
+.desktop__navigation li a  
+    color $gray
+
+/*Mobile navigation*/
+.mobile
+    position: fixed;
+    top: 0;
+    background: #fff
+    width: 80vw;
+    height: 100vh;
+    border-right 1px solid #ddd
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    transform: translateX(-100%);
+    transition: transform 500ms ease-out;
+    z-index 1
+
+.mobile__items li 
+    position relative 
+    margin 1.5rem 20px
+    text-align left
+    padding 0
+
+.mobile__items li a 
+    color $gray
+    text-align left
+    font-size 17.8px
+
+.open
+    display flex
+    transform translateX(0)
+    margin 0
+    padding 0
+
+@media (min-width: 43rem) {
+    .icon-menu {
+        display: none;
+    }
+
+    .desktop__navigation li {
+        display: block;
+    }
+    
+}
+
+.fechar
+    font-size 19px
+    cursor pointer
+
+.logo > h1,h2,h3
+    font-size 1.7rem
+    color #555
+    font-weight 500
+    margin-top 0.1rem
+    
