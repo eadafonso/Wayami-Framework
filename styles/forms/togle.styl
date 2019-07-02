@@ -1,0 +1,53 @@
+
+.togle
+    display none
+
+.togle + .togle-btn 
+    outline 0
+    display block
+    width 3em
+    height 1.4em
+    position relative
+    cursor pointer
+    -webkit-user-select none
+        -moz-user-select none
+        -ms-user-select none
+            user-select none
+
+.togle + .togle-btn:after, 
+.togle + .togle-btn:before 
+    position relative
+    display block
+    content ""
+    width 35%
+    height 100%
+
+.togle + .togle-btn:after
+    left 0
+
+.togle + .togle-btn:before 
+    display none
+
+.togle:checked + .togle-btn:after
+    left 65%
+
+.togle-ios + .togle-btn 
+    background #fbfbfb
+    border-radius 2em
+    padding 1px
+    transition all .4s ease
+    border 1px solid transparent
+
+.togle-ios + .togle-btn:after
+    border-radius: 2em;
+    background: #fbfbfb;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    border-color transparent
+
+.togle-ios + .togle-btn:active:after 
+    padding-right: .8em
+    border-color transparent
+
+.togle-ios:checked + .togle-btn 
+    background $blue
+    border-color transparent
